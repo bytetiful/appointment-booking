@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,13 +13,13 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: sans-serif;
             line-height: 1.6;
             color: #333;
         }
 
         .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #562edaff;
             color: white;
             padding: 80px 20px;
             text-align: center;
@@ -38,8 +39,13 @@
         }
 
         @keyframes float {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(-100px); }
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-100px);
+            }
         }
 
         .hero h1 {
@@ -63,6 +69,7 @@
                 opacity: 0;
                 transform: translateY(-30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -74,6 +81,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -100,12 +108,12 @@
             border-radius: 15px;
             text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         .feature-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
         }
 
         .feature-icon {
@@ -129,7 +137,7 @@
             background: #f8f9fa;
             padding: 40px;
             border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
         }
 
         .booking-form h2 {
@@ -177,7 +185,7 @@
         .submit-btn {
             width: 100%;
             padding: 15px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #562edaff;
             color: white;
             border: none;
             border-radius: 10px;
@@ -233,6 +241,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="hero">
         <h1>Book Your Appointment Today</h1>
@@ -313,8 +322,8 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 Appointment Booking. All rights reserved.</p>
-        <p>Need help? Contact us at support@appointments.com</p>
+        <p>&copy; bytetiful 2025. All rights reserved.</p>
+        <p>Need help? Contact us at bytetiful@outlook.com</p>
     </footer>
 
     <script>
@@ -326,7 +335,7 @@
         // Form submission handling
         document.getElementById('appointmentForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            
+
             // Get form data
             const formData = {
                 name: document.getElementById('name').value,
@@ -343,7 +352,7 @@
 
             // Show success message
             document.getElementById('successMessage').classList.add('show');
-            
+
             // Reset form
             this.reset();
 
@@ -353,11 +362,14 @@
             }, 5000);
 
             // Scroll to success message
-            document.getElementById('successMessage').scrollIntoView({ 
-                behavior: 'smooth', 
-                block: 'center' 
+            document.getElementById('successMessage').scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
             });
         });
     </script>
 </body>
+
 </html>
+
+</php>
